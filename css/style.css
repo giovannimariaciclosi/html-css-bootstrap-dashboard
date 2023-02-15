@@ -7,6 +7,8 @@ body {
   height: 70px;
   position: fixed;
   width: 100%;
+  z-index: 2;
+  background-color: white;
 }
 
 .bottom-container {
@@ -91,7 +93,23 @@ header {
 
 /* /header */
 
+/* section */
 
+/* table */
+.my-table-title {
+  font-size: 0.7em;
+}
+
+.td-img-container {
+  width: 30px;
+}
+
+table tr,
+table td {
+  font-size: 14px;
+}
+
+/* /section */
 /* /main */
 
 
@@ -108,4 +126,5 @@ header {
     width: calc(100vw - 70px);
   }
 }
+
 /* /md */
