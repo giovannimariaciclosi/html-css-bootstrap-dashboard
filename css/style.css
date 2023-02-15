@@ -3,7 +3,7 @@ body {
 }
 
 /* layout */
-nav {
+#navbar {
   height: 70px;
   position: fixed;
   width: 100%;
@@ -25,7 +25,6 @@ main {
   margin-top: 70px;
   width: calc(100vw - 150px);
   height: calc(100vh - 70px);
-  background-color: grey;
 }
 /* /layout */
 
@@ -41,9 +40,10 @@ main {
 .my-search-bar{
   min-width: 150px;
 }
+
 .search{
   position: relative;
-  }
+}
 
 .search input{
   width: 100%;
@@ -75,9 +75,34 @@ main {
 }
 /* /aside */
 
+/* main */
+
+/* header */
+header {
+  background-color: #1b72e8;
+
+  /* test */
+  height: 150px;
+}
+
+.my-breadcrumb-style {
+  padding: 0.2em 0.4em;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background-color: #165bba;
+  font-size: 0.8em;
+  color: white;
+}
+
+/* /header */
+
+
+/* /main */
+
 
 /* media query */
 
+/* md */
 @media screen and (max-width: 767px) {
 
   aside {
@@ -88,3 +113,4 @@ main {
     width: calc(100vw - 70px);
   }
 }
+/* /md */
