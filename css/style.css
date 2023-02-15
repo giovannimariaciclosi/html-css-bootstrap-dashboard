@@ -3,9 +3,10 @@ body {
 }
 
 /* layout */
-
 nav {
   height: 70px;
+  position: fixed;
+  width: 100%;
 }
 
 .bottom-container {
@@ -13,6 +14,7 @@ nav {
 }
 
 aside {
+  margin-top: 70px;
   width: 150px;
   height: calc(100vh - 70px);
   background-image: url('../img/sidebar-bg.png');
@@ -20,9 +22,48 @@ aside {
 }
 
 main {
+  margin-top: 70px;
   width: calc(100vw - 150px);
   height: calc(100vh - 70px);
   background-color: grey;
 }
-
 /* /layout */
+
+
+/* navbar */
+.logo-container-hidden {
+  width: 50px;
+}
+
+
+/* search bar */
+.my-search-bar{
+  min-width: 150px;
+}
+.search{
+  position: relative;
+  }
+
+.search input{
+  width: 100%;
+  height: 45px;
+  text-indent: 25px;
+  background-color: #e5e5e5;
+  border: transparent;
+}
+
+.search .fa-search{
+ position: absolute;
+ top: 14px;
+ left: 10px;
+}
+
+.bi {
+  color: #5b5858;
+  font-size: 1.2em;
+}
+.bi-bell-fill {
+  color: #ff8f00;
+}
+/* search bar */
+/* /navbar */

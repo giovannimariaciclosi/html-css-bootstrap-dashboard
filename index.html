@@ -24,9 +24,33 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <nav>
+  <!-- navbar -->
+  <nav class="d-flex align-items-center gap-3 px-3">
+
+    <div class="logo-container d-none d-md-flex">
+      <img src="img/logo.svg" alt="Boolean Logo" class="img-fluid">
+    </div>
+
+    <div class="logo-container-hidden d-md-none">
+      <img src="img/mobile-logo.png" alt="Boolean Logo" class="img-fluid">
+    </div>
+
+      <div class="flex-grow-1 my-search-bar">
+        <div class="search">
+          <i class="fa fa-search"></i>
+          <input type="text" class="form-control" placeholder="Prova a cercare: Lezioni di Laravel">
+        </div>
+      </div>
+
+      <div class="hidden-icon d-none d-md-flex gap-3">
+        <i class="bi bi-list-ul"></i>
+        <i class="bi bi-question-circle-fill"></i>
+        <i class="bi bi-three-dots-vertical"></i>
+      </div>
+      <i class="bi bi-bell-fill"></i>
 
   </nav>
+  <!-- navbar -->
 
   <div class="bottom-container">
     <aside>
