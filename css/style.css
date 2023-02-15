@@ -1,0 +1,28 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* layout */
+
+nav {
+  height: 70px;
+}
+
+.bottom-container {
+  display: flex;
+}
+
+aside {
+  width: 150px;
+  height: calc(100vh - 70px);
+  background-image: url('../img/sidebar-bg.png');
+  background-color: #0e263c;
+}
+
+main {
+  width: calc(100vw - 150px);
+  height: calc(100vh - 70px);
+  background-color: grey;
+}
+
+/* /layout */
