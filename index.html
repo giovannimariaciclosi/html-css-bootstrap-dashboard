@@ -91,36 +91,114 @@
 
       <!-- header -->
       <header>
-        <div class="header-container py-3 d-flex align-items-center justify-content-between">
+        <div class="header-container py-3 d-flex align-items-center justify-content-between text-white ps-3 pe-5 gap-4 flex-wrap flex-sm-nowrap">
 
-          <div class="header-left">
+          <div class="header-left order-2 order-sm-1">
 
-            <div class="header-left-top d-flex">
+            <div class="header-left-top d-flex align-items-center gap-2 pe-3">
               <h1 class="text-white fs-2">Boolean</h1>
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item my-breadcrumb-style"><a class="" href="#">Piano blaze</a></li>
-              </ol>
+              <span class="badge rounded-pill my-badge">Piano blaze</span>
+            </div>
+            
+            <div class="header-left-bottom d-flex align-items-center gap-1">
+              <span class="badge rounded-pill my-badge">3 app</span>
+              <i class="fa-solid fa-angles-right"></i>     
+              <div class="hidden-badge d-lg-block d-none">
+                <span class="badge rounded-pill my-badge">Boolean mobile app</span>
+                <span class="badge rounded-pill my-badge">Boolean web app</span>
+                <span class="badge rounded-pill my-badge">Boolean blog app</span>
+              </div>
+              <span class="badge rounded-pill my-badge d-lg-none">+</span>         
             </div>
 
-            <nav style="--bs-breadcrumb-divider: '>>';" aria-label="breadcrumb">
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item my-breadcrumb-style mx-1"><a class="" href="#">3 app</a></li>
-                <li class="breadcrumb-item active my-breadcrumb-style mx-1" aria-current="page">Boolean mobile app</li>
-                <li class="breadcrumb-item active my-breadcrumb-style mx-1" aria-current="page">Boolean web app</li>
-                <li class="breadcrumb-item active my-breadcrumb-style mx-1" aria-current="page">Boolean blogg app</li>
-
-
-              </ol>
-            </nav>
-
           </div>
 
-          <div class="header-center">
-
+          <div class="header-center d-flex flex-column order-3 order-sm-2">
+            <span>Studenti online negli ultimi 30 minuti</span>
+            <span class="fs-2">125</span>
           </div>
 
-          <div class="header-right">
+          <div class="header-right order-1 order-sm-3 d-flex align-items-center gap-3">
+            <span class="p">Nuovo Studente</span>
 
+            <!-- offcanvas -->
+            <button class="bg-transparent border-white fs-4 rounded px-3 py-0 border-1 text-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+              <div class="offcanvas-header">
+                <h5 id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+
+              <!-- offcanvas body -->
+              <div class="offcanvas-body">
+                
+                <form class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label">Nome</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">Cognome</label>
+                    <input type="text" class="form-control">
+                  </div>
+
+                  <div class="col-6">
+                    <label for="inputAddress" class="form-label">Email</label>
+                    <div class="input-group">
+                      <div class="input-group-text bg-body-secondary">@</div>
+                      <input type="email" class="form-control">
+                    </div>
+                  </div>
+
+                  <div class="col-6">
+                    <label for="inputPassword4" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="inputPassword4">
+                  </div>
+
+                  <div class="col-12">
+                    <label for="inputAddress" class="form-label">Indirizzo</label>
+                    <input type="text" class="form-control" id="inputAddress">
+                  </div>
+             
+                  <div class="col-md-6">
+                    <label for="inputCity" class="form-label">Città</label>
+                    <input type="text" class="form-control" id="inputCity">
+                  </div>
+                  <div class="col-md-4">
+                    <label for="inputState" class="form-label">Stato</label>
+                    <select id="inputState" class="form-select">
+                      <option selected>Scegli...</option>
+                      <option>...</option>
+                    </select>
+                  </div>
+                  <div class="col-md-2">
+                    <label for="inputZip" class="form-label">CAP</label>
+                    <input type="text" class="form-control" id="inputZip">
+                  </div>
+
+                  <div class="col-12">
+                    <label class="form-label" for="customFile">Foto</label>
+                    <input type="file" class="form-control" id="customFile" />
+                  </div>
+
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="gridCheck">
+                      <label class="form-check-label" for="gridCheck">
+                        Seleziona per proseguire
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Salva</button>
+                    <button type="reset" class="btn btn-warning">Svuota</button>
+                  </div>
+                </form>
+
+              </div>
+            </div>
           </div>
 
         </div>

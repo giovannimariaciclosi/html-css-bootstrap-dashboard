@@ -85,13 +85,8 @@ header {
   /* height: 150px; */
 }
 
-.my-breadcrumb-style {
-  padding: 0.2em 0.4em;
-  border: 1px solid transparent;
-  border-radius: 10px;
+.my-badge {
   background-color: #165bba;
-  font-size: 0.8em;
-  color: white;
 }
 
 /* /header */
