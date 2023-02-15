@@ -68,3 +68,23 @@ main {
 }
 /* search bar */
 /* /navbar */
+
+/* aside */
+.fa-chart-simple {
+  width: 18px;
+}
+/* /aside */
+
+
+/* media query */
+
+@media screen and (max-width: 767px) {
+
+  aside {
+    width: 70px;
+  }
+
+  main {
+    width: calc(100vw - 70px);
+  }
+}
