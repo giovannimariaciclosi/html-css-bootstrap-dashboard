@@ -33,6 +33,7 @@ main {
 /* navbar */
 .logo-container-hidden {
   width: 50px;
+  min-width: 50px
 }
 
 
